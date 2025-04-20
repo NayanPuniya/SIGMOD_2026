@@ -31,9 +31,11 @@
       <p class="text-sm text-gray-400 mt-2">Follow our progress:</p>
     </div>
 
-    <!-- Right Section: Larger ACM Logo -->
+    <!-- Right Section: Larger ACM Logo with Link -->
     <div class="mt-6 md:mt-0 md:w-1/4 flex justify-end">
-      <img src="./images/acm_logo.png" alt="Association for Computing Machinery" class="h-36"> <!-- Increased size -->
+      <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/acm_logo.png" alt="Association for Computing Machinery" class="h-36">
+      </a>
     </div>
 
   </div>

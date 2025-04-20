@@ -53,6 +53,38 @@
   </div>
 </section>
 
+<!-- Sponsor Section -->
+<section id="sponsors" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-[#0066CC] mb-12 animate__animated animate__fadeInUp">
+      Our Sponsors
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-center justify-items-center animate__animated animate__fadeInUp">
+      
+      <!-- Sponsor 1 -->
+      <div class="text-center">
+        <img src="./images/sponsor1.png" alt="Sponsor 1 Logo" class="h-20 mx-auto mb-4">
+        <p class="text-lg font-semibold text-gray-700">Sponsor One</p>
+      </div>
+
+      <!-- Sponsor 2 -->
+      <div class="text-center">
+        <img src="./images/sponsor2.png" alt="Sponsor 2 Logo" class="h-20 mx-auto mb-4">
+        <p class="text-lg font-semibold text-gray-700">Sponsor Two</p>
+      </div>
+
+      <!-- Sponsor 3 -->
+      <div class="text-center">
+        <img src="./images/sponsor3.png" alt="Sponsor 3 Logo" class="h-20 mx-auto mb-4">
+        <p class="text-lg font-semibold text-gray-700">Sponsor Three</p>
+      </div>
+
+      <!-- Add more sponsors as needed -->
+    </div>
+  </div>
+</section>
+
+
 <!-- Schedule Section -->
 <?php include 'schedule.php'; ?>
 

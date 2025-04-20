@@ -51,13 +51,15 @@
             <?php
             $menus = [
               "Organisation" => [
+                "Warmup" => "warmup.php",
+                "Inclusion and Diversity" => "inclusion_diversity.php",
                 "Organization" => "organization.php",
                 "SIGMOD PC" => "sigmod_pc.php",
                 "PODS PC" => "pods_pc.php",
                 "SIGMOD Industry PC" => "sigmod_industry_pc.php",
                 "SIGMOD Demo PC" => "sigmod_demo_pc.php",
                 "Sponsor Opportunities" => "sponsors.php",
-                "ACM SIGMOD Online" => "sigmod_online.php"
+                "ACM SIGMOD Online" => "https://sigmod.org/"
               ],
               "SIGMOD Program" => [
                 "Accepted Papers" => "accepted_papers.php",
@@ -68,6 +70,7 @@
                 "Accepted Industry Papers" => "accepted_industry_papers.php"
               ],
               "PODS Program" => [
+                "Reproducibility" => "https://reproducibility.sigmod.org/",
                 "Research Papers" => "pods_research.php",
                 "Keynote Talk" => "pods_keynote.php",
                 "Invited Tutorials" => "pods_tutorials.php",
@@ -95,8 +98,8 @@
                 "SIGMOD Call for Workshop Proposals" => "sigmod_workshop_call.php",
                 "SIGMOD Call for Demonstration Proposals" => "sigmod_demo_call.php",
                 "SIGMOD Call for Award Nomination" => "sigmod_award_call.php",
-                "SIGMOD Call for Doctoral Dissertation Award" => "sigmod_dissertation_call.php",
-                "SIGMOD Programming Contest" => "sigmod_contest.php"
+                "SIGMOD Call for Doctoral Dissertation Award" => "https://sigmod.org/sigmod-awards/doctoral-dissertation-award/",
+                "SIGMOD Programming Contest" => "https://sigmod-contest-2025.github.io/index.html"
               ]
             ];
 
@@ -106,7 +109,9 @@
               echo $title;
               echo '<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>';
               echo '</button>';
-              echo '<div class="hidden group-hover:block md:absolute md:mt-1 bg-white w-full md:w-56 shadow-lg rounded-md py-2 z-10">';
+              
+              // FIX: dropdown directly touches the button and stays on hover
+              echo '<div class="hidden absolute top-full left-0 group-hover:block bg-white w-full md:w-56 shadow-lg rounded-md py-2 z-10">';
               foreach ($items as $item => $link) {
                 echo '<a href="' . $link . '" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">' . $item . '</a>';
               }
